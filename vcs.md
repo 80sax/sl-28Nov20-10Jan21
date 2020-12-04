@@ -62,14 +62,16 @@ Git --> BitBucket, GitLab, GitHub
     - Distributed
 
 ## Installation
-https://git-scm.com/
+
+    Office Webpage
+    https://git-scm.com/
 
 
-Ubuntu
-sudo apt-get install -y git
+    Ubuntu
+    sudo apt-get install -y git
 
-CentOS
-sudo yum install -y git
+    CentOS
+    sudo yum install -y git
 
 ## Git Commands
 
