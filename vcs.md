@@ -3,6 +3,7 @@
 ## ###########################
 
 **Linus Torvalds --> Author of both Git and Linux**
+**Pro Git: https://git-scm.com/book/en/v2**
 ## Agenda
 
     Introduction
@@ -107,6 +108,6 @@
 
     https://git-scm.com/
     https://nvie.com/posts/a-successful-git-branching-model/
-    https://git-scm.com/book/en/v2
+    
 
 
