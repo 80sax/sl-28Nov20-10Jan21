@@ -17,6 +17,7 @@
     Ignoring files in Git
 
 
+
 ## Keywords
 
     Master/Main/Trunk
@@ -44,6 +45,7 @@
     - Distributed / Parallel Development /  Branching    
     - Investigation and Accounting
 
+
 ## Why Git?
 
     - Distributed
@@ -53,6 +55,7 @@
      
 
 ## Types of VCS
+
     - Centralized - SVN, CVS, Accurev
         - Connected to the server
         - Mulitple Devs can't contribute simultaneously
