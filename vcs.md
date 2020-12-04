@@ -66,12 +66,16 @@ Git --> BitBucket, GitLab, GitHub
     Office Webpage
     https://git-scm.com/
 
+    MacOS / Windows
+    https://git-scm.com/downloads
 
-    Ubuntu
-    sudo apt-get install -y git
+    Linux
+    Ubuntu: sudo apt-get install -y git
+    CentOS: sudo yum install -y git
 
-    CentOS
-    sudo yum install -y git
+    Git Documentation
+    https://git-scm.com/book/en/v2
+
 
 ## Git Commands
 
