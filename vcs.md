@@ -10,8 +10,8 @@
     Installation and Configuration
     Basic Git operations and commands
     GitHub
-    
-    Branching and Merging
+
+    Branching and Merging (concepts discussed, commands pending)
     Undoing changes in Git
     Ignoring files in Git
 
@@ -20,13 +20,9 @@
     Master/Main/Trunk
     BugFixes / Feature
     Bundle releases --> SP1 / SP2/ SP3
-
-**Apache 2.0 and MIT Licenses**
-
-Linux --> RedHat, Ubuntu, Suse, Mint, Arch
-Git --> BitBucket, GitLab, GitHub
-
-
+    Apache 2.0 and MIT Licenses
+    Linux --> RedHat, Ubuntu, Suse, Mint, Arch
+    Git --> BitBucket, GitLab, GitHub
 
 ## Source Code Management / Version Control System (SCM/VCS)
 
@@ -47,6 +43,7 @@ Git --> BitBucket, GitLab, GitHub
     - Investigation and Accounting
 
 ## Why Git?
+
     - Distributed
     - Fast
     - Excellent at handling large number of branches
@@ -60,6 +57,9 @@ Git --> BitBucket, GitLab, GitHub
         - Slow
 
     - Distributed
+        - Local copy of the source code
+        - Speed
+        - Not necessary to connect to the network
 
 ## Installation
 
@@ -94,7 +94,8 @@ Git --> BitBucket, GitLab, GitHub
     git pull
 
 
-Class Exercise:
+## Class Exercise
+
     1. Create an account on Gitub
     2. Create repository on github
     3. add some sample file
@@ -103,19 +104,10 @@ Class Exercise:
     6. Use git Push to push the changes to GitHub
 
 
+## References
 
-
-git add .
-git commit -m "..."
-
-git commit -am ".."
-
-
-
-References:
-
-    - https://git-scm.com/
-    - https://nvie.com/posts/a-successful-git-branching-model/
-    - https://git-scm.com/book/en/v2
+    https://git-scm.com/
+    https://nvie.com/posts/a-successful-git-branching-model/
+    https://git-scm.com/book/en/v2
 
 
