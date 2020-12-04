@@ -2,8 +2,7 @@
 ## SCM / VCS using Git
 ## ###########################
 
-## Git and Linux ---> Linus Torvalds
-
+**Linus Torvalds --> Author of both Git and Linux**
 ## Agenda
 
     Introduction
