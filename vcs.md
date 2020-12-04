@@ -3,6 +3,7 @@
 ## ###########################
 
 **Linus Torvalds --> Author of both Git and Linux**
+
 **Pro Git: https://git-scm.com/book/en/v2**
 ## Agenda
 
