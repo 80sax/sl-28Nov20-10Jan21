@@ -1,20 +1,25 @@
 CI CD Using Jenkins
 
-Introduction
-Concepts
-    - Continuous Integration
-    - Continuous Delivery
-    - Continuous Deployemnt
-Jenkisn installation and configuration
+## Agenda
 
-Plugins
-Sample Jobs
-Build triggers
-Upstream/Downstream Projects
-Parameterized Builds
-Jenkins Pipelines (Pipeline-as-Code)
+    Introduction
+    Concepts
+        - Continuous Integration
+        - Continuous Delivery
+        - Continuous Deployemnt
+    Jenkisn installation and configuration
+    Plugins
+    Sample Jobs
+    Upstream/Downstream Projects
+    Parameterized Builds
+    Build triggers
+    Distributed Builds (Jenkins Build Slaves)
 
-Installationa and Configuration
+    Jenkins Pipelines (Pipeline-as-Code)
+
+
+## Installationa and Configuration
+
 
 access the server on the browser:
 
@@ -24,9 +29,80 @@ localhost:8080
 
 
 
+Build Tools
+    - Java
+        - Ant (Build.xml)
+        - Maven (POM.xml)
+        - Gradle (build.xml)
+    .Net
+        - MSBuild (Build)
+        - Octopus Deploy (Deployment Automation)
+    
 
-"Fear of Failure"
+Buildtool - Maven
+Environment - JDK
+Build triggers
+    Poll SCM
 
+Plugins
+
+
+https://github.com/sk12k/addressbook
+
+mvn -f pom.xml package
+
+Classroom Exercise
+
+1. Source Code: https://github.com/sk12k/addressbook.git
+
+2. Build Step: Maven
+    - Goal: package
+    - POM: pom.xml
+
+
+test ----> Staging ----> deploy
+
+Project
+    - JobA
+        - Build#1
+        - Build#2
+    - JobB
+        - Build#1
+        - Build#2
+
+
+This project will deploy the artifact in Test Environment on App Nodes
+This project will deploy the artifact in prod Environment on DB Nodes
+
+http://209.97.128.222:8080/job/deploy/configure
+
+curl -u admin:passw0rd http://209.97.128.222:8080/job/deploy/build?token=mysupersecureauth
+
+
+Build Nodes
+    - Maven
+        - host1
+        - host2
+        - host3
+    
+    - .Net
+        - winhost1
+        - winhost2
+        - winhost3
+    
+    - Pythonslaves
+        - host4
+        - host5
+        - host6
+
+## Post Commit Hooks
+
+yourrepo/.git/hooks/post-commit
+
+#!/bin/sh
+curl -u admin:passw0rd http://209.97.128.222:8080/job/deploy/build?token=mysupersecureauth
+
+Note: make sure the "post-commit" file is executable
 
 
 References:
@@ -35,4 +111,6 @@ https://www.thoughtworks.com/continuous-integration
 https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf
 https://www.jenkins.io/
 Jenkins on MacOS: https://coralogix.com/log-analytics-blog/how-to-install-and-configure-jenkins-on-the-mac-os/
+Maven Documentation: https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
 
