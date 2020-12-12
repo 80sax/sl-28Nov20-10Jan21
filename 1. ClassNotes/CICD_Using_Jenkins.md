@@ -132,5 +132,7 @@ Note: make sure the "post-commit" file is executable
     https://www.jenkins.io/
     Jenkins on MacOS: https://coralogix.com/log-analytics-blog/how-to-install-and-configure-jenkins-on-the-mac-os/
     Maven Documentation: https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+    https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
+    
 
 
