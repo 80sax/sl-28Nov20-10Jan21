@@ -105,12 +105,32 @@ curl -u admin:passw0rd http://209.97.128.222:8080/job/deploy/build?token=mysuper
 Note: make sure the "post-commit" file is executable
 
 
-References:
-https://www.martinfowler.com/articles/continuousIntegration.html
-https://www.thoughtworks.com/continuous-integration
-https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf
-https://www.jenkins.io/
-Jenkins on MacOS: https://coralogix.com/log-analytics-blog/how-to-install-and-configure-jenkins-on-the-mac-os/
-Maven Documentation: https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+## Assignements:
+
+    1. Practice Additional Git Concepts
+
+        git tag         - https://git-scm.com/book/en/v2/Git-Basics-Tagging
+        git blame       - https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame
+        git stash       - https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning
+        git rebase      - https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+        git cherry-pick - https://www.atlassian.com/git/tutorials/cherry-pick
+
+
+    2. Configure Webhook in GitHub (in your own repo)
+
+    3. Teamcity installation
+    Simplilearn LMS --> Self Learning --> Video 4.7
+
+    4. Lesson End Exercise (Email extension plugin in Jenkins)
+
+
+## References:
+    https://www.martinfowler.com/articles/continuousIntegration.html
+    https://www.thoughtworks.com/continuous-integration
+    https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf
+    https://www.jenkins.io/
+    Jenkins on MacOS: https://coralogix.com/log-analytics-blog/how-to-install-and-configure-jenkins-on-the-mac-os/
+    Maven Documentation: https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
 
 

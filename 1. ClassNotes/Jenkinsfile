@@ -1,0 +1,38 @@
+
+pipeline {
+    agent any
+    tools {
+        maven 'maven3'
+    }
+    stages {
+        stage ('Checkout') {
+            steps {
+                git 'https://github.com/sk12k/addressbook.git'
+            }
+        }
+        stage ('build') {
+            steps {
+                sh '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3/bin/mvn -f pom.xml package'
+            }
+        }
+        stage ('Notification') {
+            emailext body: 'Testing email from Jenkins', subject: 'Test', to: 'shariquekamal@gmail.com'
+        }
+    }
+}
+
+
+## Pre-requisites to send email:
+
+    1. Make sure "Extended E-mail Notification plugin" is installed.
+
+    2. Go to Manage Jenkins --> Configure System
+    3. Scroll to bottom to find "Extended E-mail Notification" Section.
+    4. Provide the following values
+        SMTP server - smtp.gmail.com
+        SMTP Port - 465
+        Advanced
+            - SMTP username - Your gmail id
+            - SMTP Password - Your gmail password
+        Make sure "Use SSL" is checked
+    5. Save and Exit
