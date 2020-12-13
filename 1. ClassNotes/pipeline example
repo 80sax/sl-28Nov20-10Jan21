@@ -1,45 +1,5 @@
-pipeline {
-    agent any
-    tools {
-        maven 'maven3'
-    }
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/sk12k/addressbook.git'
-            }
-        }
-        stage('package') {
-            steps {
-                echo 'This is the unit testing step'
-            }
-        }
-    }
-}
 
-pipeline {
-    agent
-    tools
-    stages {
-        stage1 {
-            step1 {}
-            Step2 {}
-        }
-        stage2 {
-            step1 {}
-            Step2 {}
-        }
-        stage3 {
-            step1 {}
-            Step2 {}
-        }
-    }
-}
+
 
 
 

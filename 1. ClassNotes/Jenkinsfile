@@ -10,14 +10,6 @@ pipeline {
                 git 'https://github.com/sk12k/addressbook.git'
             }
         }
-        stage ('build') {
-            steps {
-                sh '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3/bin/mvn -f pom.xml package'
-            }
-        }
-        stage ('Notification') {
-            emailext body: 'Testing email from Jenkins', subject: 'Test', to: 'shariquekamal@gmail.com'
-        }
     }
 }
 
