@@ -119,6 +119,7 @@ sudo systemctl enable puppet
 5. Edit "/etc/puppetlabs/puppet/puppet.conf" and add the following line:
 [main]
 server = puppet
+
 [master]
 [node]
 
