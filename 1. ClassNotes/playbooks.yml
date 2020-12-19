@@ -1,0 +1,39 @@
+
+ansible -m ping all
+
+ansible -m apt -a 'name=elinks state=present'
+
+# Ping.yml
+---
+- hosts: all
+  remote_user: ansible
+  become: yes
+  tasks:
+    - name: Ping all servers
+      action: ping
+
+
+# elinks.yml
+---
+- hosts: all
+  remote_user: ansible
+  become: yes
+  tasks:
+    - name: Install Elinks utility
+      apt:
+        name: elinks
+        state: latest
+
+
+# install.yml
+---
+- hosts: '{{ myhosts }}'
+  remote_user: ansible
+  become: yes
+  tasks:
+    - name: Install specified utility
+      apt:
+        name: '{{ pkg }}'
+        state: latest
+    
+
